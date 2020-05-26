@@ -27,7 +27,6 @@ import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.guanguannfc.R;
 import com.example.guanguannfc.controller.dataVisualization.Allactivity;
@@ -80,7 +79,7 @@ public class DataFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view= inflater.inflate(R.layout.activity_data, container, false);
+        view= inflater.inflate(R.layout.fragment_data, container, false);
         Bundle bundle = this.getArguments();
         if(bundle!=null){
             userName = bundle.getString("username");
